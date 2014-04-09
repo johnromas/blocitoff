@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-feature 'Project manager creates List' do
+feature 'User creates List' do
   scenario 'Successfully' do
     visit new_list_path
     fill_in 'Name', with: 'Grocery List'
