@@ -1,2 +1,8 @@
-<h1>Lists#new</h1>
-<p>Find me in app/views/lists/new.html.erb</p>
+<%= form_for List.new do |f| %>
+  <div class='form-group'>
+    <%= f.text_field :name, class: 'form-control', placeholder: 'Name' %>
+  </div>
+  <div class='form-group'>
+    <%= f.submit 'Save', class: 'btn btn-success' %>
+  </div>
+<% end %>
