@@ -1,4 +1,7 @@
 <h2><%= @list.name %></h2>
+<% if @list.todos.count == 0 %>
+  <h5>No Todo's on This List Yet!!</h5>
+<% end %>
 <ol>
 <% @todos.each do |todo| %>
   <li><h4><%= todo.desc %></h4></li>

@@ -32,6 +32,10 @@ gem 'devise'
 
 gem 'figaro'
 
+gem 'pundit'
+
+gem 'whenever'
+
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 

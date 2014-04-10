@@ -1,10 +1,11 @@
 class ListsController < ApplicationController
   def new
     @list = List.new
+    authorize @list
   end
 
   def index
-    @lists = List.all
+    @lists = current_user.lists
   end
 
   def edit

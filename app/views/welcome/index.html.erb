@@ -1,0 +1,12 @@
+<br/>
+<div class="jumbotron">
+  <h1>Bloccitoff</h1>
+  <p>Bloccitoff is a great way to keep your to-do lists prioritized and clean!</p>
+  <% if !current_user %>
+  <p>
+      <%= link_to "Sign In", new_user_session_path, class: 'btn btn-primary' %> or 
+      <%= link_to "Sign Up", new_user_registration_path, class: 'btn btn-primary' %> today!
+  </p>
+  <% end %>
+</div>
+

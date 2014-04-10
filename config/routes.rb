@@ -5,5 +5,5 @@ Blocitoff::Application.routes.draw do
      resources :todos
   end
 
-  root to: 'lists#index'
+  root to: 'welcome#index'
 end
