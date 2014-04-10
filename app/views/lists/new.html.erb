@@ -1,5 +1,6 @@
 <%= form_for List.new do |f| %>
   <div class='form-group'>
+    <%= f.label 'List Name' %>
     <%= f.text_field :name, class: 'form-control', placeholder: 'Name' %>
   </div>
   <div class='form-group'>

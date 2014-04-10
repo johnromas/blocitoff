@@ -17,7 +17,7 @@ class ListsController < ApplicationController
   end
 
   def create
-    @list = List.new(list_params)
+    @list = current_user.lists.build(list_params)
     @list.save
     redirect_to @list, notice: 'Your new List was created successfully!'
   end
